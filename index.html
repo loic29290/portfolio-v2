@@ -3,52 +3,150 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Loïc | DevOps Engineer</title>
+    <title>Loïc Prémel | DevOps Engineer</title>
     <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;700;800&family=Fira+Code:wght@400;500&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Plus Jakarta Sans', sans-serif; background-color: #020617; color: #cbd5e1; }
+        .mono { font-family: 'Fira Code', monospace; }
+        .glass { background: rgba(15, 23, 42, 0.85); backdrop-filter: blur(12px); border: 1px solid rgba(255, 255, 255, 0.1); }
+        .bg-grid { background-image: radial-gradient(circle, #1e293b 1px, transparent 1px); background-size: 30px 30px; }
+        .photo-frame { background: linear-gradient(135deg, #10b981, #3b82f6); padding: 4px; }
+    </style>
 </head>
-<body class="bg-slate-900 text-slate-200 font-mono">
+<body class="antialiased bg-grid font-light">
 
-    <div class="max-w-4xl mx-auto px-6 py-12">
-        <header class="border-b border-slate-700 pb-8">
-            <h1 class="text-4xl font-bold text-emerald-400">Loïc</h1>
-            <p class="text-xl mt-2 text-slate-400">DevOps Engineer & Automation Specialist</p>
-            <div class="flex gap-4 mt-4">
-                <span class="bg-slate-800 text-emerald-400 px-3 py-1 rounded-full text-xs border border-emerald-400/30">Kubernetes</span>
-                <span class="bg-slate-800 text-emerald-400 px-3 py-1 rounded-full text-xs border border-emerald-400/30">Docker</span>
-                <span class="bg-slate-800 text-emerald-400 px-3 py-1 rounded-full text-xs border border-emerald-400/30">CI/CD</span>
+    <nav class="max-w-6xl mx-auto px-6 py-8 flex justify-between items-center">
+        <div class="mono text-emerald-400 font-bold text-xl tracking-tighter italic">LOÏC<span class="text-white">.devops</span></div>
+        <div class="hidden md:block mono text-[10px] uppercase tracking-widest text-slate-500 font-black">
+            <span class="text-emerald-500 animate-pulse">●</span> K8S_READY // <span class="text-red-500">●</span> TOR_NETWORK // <span class="text-orange-500">●</span> CLOUD_AUTOMATION
+        </div>
+    </nav>
+
+    <main class="max-w-6xl mx-auto px-6 pb-24">
+        
+        <section class="py-16 flex flex-col md:flex-row items-center gap-10">
+            <div class="photo-frame rounded-full shadow-2xl shadow-emerald-500/20 group">
+                <img src="./img/loic_profil.jpg" alt="Loïc Prémel" class="w-48 h-48 md:w-56 md:h-56 rounded-full object-cover border-4 border-[#020617] grayscale hover:grayscale-0 transition-all duration-500">
             </div>
-        </header>
-
-        <section class="mt-12">
-            <h2 class="text-2xl font-semibold mb-6 text-slate-100 italic">// Case Studies</h2>
-            
-            <div class="grid gap-8">
-                <div class="bg-slate-800/50 p-6 rounded-lg border border-slate-700">
-                    <h3 class="text-xl font-bold text-emerald-400 uppercase">Industrialisation Env. Local (Moodle)</h3>
-                    <p class="mt-2 text-slate-300">Standardisation d'une stack complexe via Docker pour les développeurs.</p>
-                    <ul class="mt-4 space-y-2 text-sm text-slate-400">
-                        <li>• Isolation via Docker-Compose (PHP-FPM, MariaDB, Redis)</li>
-                        <li>• Automatisation des tâches via Makefile</li>
-                        <li>• Gestion des secrets via variables d'environnement (.env)</li>
-                    </ul>
-                </div>
-
-                <div class="bg-slate-800/50 p-6 rounded-lg border border-slate-700">
-                    <h3 class="text-xl font-bold text-emerald-400 uppercase">GitOps & CI/CD Pipelines</h3>
-                    <p class="mt-2 text-slate-300">Automatisation des tests et déploiements via GitHub Actions.</p>
-                    <ul class="mt-4 space-y-2 text-sm text-slate-400">
-                        <li>• Linting automatique (Hadolint pour Docker, Helm-lint)</li>
-                        <li>• Build et Push d'images sur Registries</li>
-                        <li>• Déploiement automatisé sur environnements de test</li>
-                    </ul>
-                </div>
+            <div class="text-center md:text-left">
+                <h1 class="text-5xl md:text-8xl font-black text-white tracking-tighter leading-none mb-6 italic uppercase">
+                    Innovate & <br> <span class="text-emerald-400">Automate.</span>
+                </h1>
+                <p class="max-w-2xl text-xl text-slate-400 font-light leading-relaxed italic">
+                    Ingénieur <span class="text-white font-bold border-b border-emerald-500/30 uppercase italic">DevOps (Sorbonne - Niv. 6)</span>. Expert en infrastructure cloud, automatisation et performance système.
+                </p>
             </div>
         </section>
 
-        <footer class="mt-12 pt-8 border-t border-slate-700 text-center text-slate-500 text-sm">
-            <p>Deployé via GitHub Actions | Source Code on GitHub</p>
-        </footer>
-    </div>
+        <div class="grid md:grid-cols-2 gap-8">
+            
+            <div class="group relative overflow-hidden rounded-[2.5rem] glass hover:border-emerald-500/50 transition-all duration-500 shadow-2xl flex flex-col">
+                <div class="h-48 relative flex items-center justify-center overflow-hidden bg-gray-900">
+                    <img src="https://images.pexels.com/photos/1148820/pexels-photo-1148820.jpeg?auto=compress&cs=tinysrgb&w=1200" alt="Serveurs Cloud" class="absolute inset-0 w-full h-full object-cover opacity-30 group-hover:opacity-50 group-hover:scale-105 transition-all duration-700">
+                    <div class="text-white/10 font-black text-7xl mono italic uppercase relative z-10">K8S</div>
+                    <div class="absolute inset-0 bg-gradient-to-t from-[#0f172a] to-transparent z-10"></div>
+                    <div class="absolute bottom-4 left-6 z-20"><span class="bg-emerald-500 text-black text-[10px] font-black px-3 py-1 rounded uppercase italic">Cloud Orchestration</span></div>
+                </div>
+                <div class="p-8 flex-1">
+                    <h3 class="text-2xl font-black text-white uppercase italic mb-4 tracking-tighter">Kubernetes & Multi-Cloud</h3>
+                    <p class="text-sm text-slate-400 leading-relaxed mb-6 italic">
+                        Conception et déploiement d'architectures <span class="text-white font-bold">Cloud natives haute disponibilité (HA)</span>, notamment pour des applications critiques comme <span class="text-white font-bold">Moodle Enterprise</span>. Maîtrise avancée de l'<span class="text-white font-bold">Infrastructure as Code (IaC)</span> avec <span class="text-white font-bold">Terraform</span> et des pipelines <span class="text-white font-bold">CI/CD GitLab CI</span> pour automatiser les déploiements sur <span class="text-white font-bold">AWS, OVH, Scaleway, et Alibaba Cloud</span>.
+                    </p>
+                    <div class="flex gap-2 mono text-[9px] font-bold uppercase mt-auto">
+                        <span class="bg-emerald-500/10 text-emerald-400 px-2 py-1 rounded border border-emerald-500/20">Terraform</span>
+                        <span class="bg-blue-500/10 text-blue-400 px-2 py-1 rounded border border-blue-500/20">GitLab CI</span>
+                        <span class="bg-yellow-500/10 text-yellow-400 px-2 py-1 rounded border border-yellow-500/20">Docker</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="group relative overflow-hidden rounded-[2.5rem] glass hover:border-sky-500/50 transition-all duration-500 shadow-2xl flex flex-col">
+                <div class="h-48 relative flex items-center justify-center overflow-hidden bg-gray-900">
+                    <img src="https://images.unsplash.com/photo-1629654297299-c8506221ca97?q=80&w=1200&auto=format" alt="Terminal Linux" class="absolute inset-0 w-full h-full object-cover opacity-30 group-hover:opacity-50 group-hover:scale-105 transition-all duration-700">
+                    <div class="text-white/10 font-black text-7xl mono italic uppercase relative z-10">LINUX</div>
+                    <div class="absolute inset-0 bg-gradient-to-t from-[#0f172a] to-transparent z-10"></div>
+                    <div class="absolute bottom-4 left-6 z-20"><span class="bg-sky-500 text-white text-[10px] font-black px-3 py-1 rounded uppercase italic">SysAdmin & Web Stack</span></div>
+                </div>
+                <div class="p-8 flex-1">
+                    <h3 class="text-2xl font-black text-white uppercase italic mb-4 tracking-tighter">Administration Système & Tests</h3>
+                    <p class="text-sm text-slate-400 leading-relaxed mb-6 italic">
+                        Maintenance en condition opérationnelle (MCO) de serveurs de production <span class="text-white font-bold">Ubuntu</span>. Gestion du socle technique <span class="text-white font-bold">Apache, Nginx et PHP</span>, ainsi que les montées de version du cœur et des plugins <span class="text-white font-bold">Moodle</span>. Intégration d'outils via un processus strict : test et validation en local (ex: <span class="text-white font-bold">Vaultwarden, Jitsi, Matrix, Element</span>) avant le déploiement définitif en production.
+                    </p>
+                    <div class="flex gap-2 mono text-[9px] font-bold uppercase mt-auto">
+                        <span class="bg-sky-500/10 text-sky-400 px-2 py-1 rounded border border-sky-500/20">Ubuntu Server</span>
+                        <span class="bg-purple-500/10 text-purple-400 px-2 py-1 rounded border border-purple-500/20">Nginx / PHP</span>
+                        <span class="bg-green-500/10 text-green-400 px-2 py-1 rounded border border-green-500/20">Self-Hosting</span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="group relative overflow-hidden rounded-[2.5rem] glass hover:border-orange-500/50 transition-all duration-500 shadow-2xl flex flex-col">
+                <div class="h-48 relative flex items-center justify-center overflow-hidden bg-gray-900">
+                    <img src="https://images.pexels.com/photos/186461/pexels-photo-186461.jpeg?auto=compress&cs=tinysrgb&w=1200" alt="Dashboard Monitoring" class="absolute inset-0 w-full h-full object-cover opacity-30 group-hover:opacity-50 group-hover:scale-105 transition-all duration-700">
+                    <div class="text-white/10 font-black text-7xl mono italic uppercase relative z-10">MONITOR</div>
+                    <div class="absolute inset-0 bg-gradient-to-t from-[#0f172a] to-transparent z-10"></div>
+                    <div class="absolute bottom-4 left-6 z-20"><span class="bg-orange-500 text-white text-[10px] font-black px-3 py-1 rounded uppercase italic">Observability & Alerting</span></div>
+                </div>
+                <div class="p-8 flex-1">
+                    <h3 class="text-2xl font-black text-white uppercase italic mb-4 tracking-tighter">Centreon, Grafana & Local Lab</h3>
+                    <p class="text-sm text-slate-400 leading-relaxed mb-6 italic">
+                        Administration de l'infrastructure actuelle via <span class="text-white font-bold">Centreon</span> pour la supervision matérielle des serveurs (CPU, RAM, Swap, disques). Déploiement d'une nouvelle architecture d'observabilité avec <span class="text-white font-bold">Grafana</span> dédiée au monitoring de nos pods <span class="text-white font-bold">Kubernetes</span>. En parallèle, j'applique ces concepts sur mon environnement de test local via <span class="text-white font-bold">Docker</span> pour superviser ma machine Windows et mes conteneurs.
+                    </p>
+                    <div class="flex gap-2 mono text-[9px] font-bold uppercase mt-auto">
+                        <span class="bg-green-500/10 text-green-400 px-2 py-1 rounded border border-green-500/20">Centreon Servers</span>
+                        <span class="bg-orange-500/10 text-orange-400 px-2 py-1 rounded border border-orange-500/20">Grafana & K8s</span>
+                        <span class="bg-blue-500/10 text-blue-400 px-2 py-1 rounded border border-blue-500/20">Docker Local</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="group relative overflow-hidden rounded-[2.5rem] glass hover:border-red-500/50 transition-all duration-500 shadow-2xl flex flex-col">
+                <div class="h-48 relative flex items-center justify-center overflow-hidden bg-gray-900">
+                    <img src="https://images.unsplash.com/photo-1550751827-4bd374c3f58b?q=80&w=1200&auto=format" alt="Cyber Security" class="absolute inset-0 w-full h-full object-cover opacity-30 group-hover:opacity-50 group-hover:scale-105 transition-all duration-700">
+                    <div class="text-white/10 font-black text-7xl mono italic uppercase relative z-10">CYBER</div>
+                    <div class="absolute inset-0 bg-gradient-to-t from-[#0f172a] to-transparent z-10"></div>
+                    <div class="absolute bottom-4 left-6 z-20"><span class="bg-red-500 text-white text-[10px] font-black px-3 py-1 rounded uppercase italic">Personal Projects</span></div>
+                </div>
+                <div class="p-8 flex-1">
+                    <h3 class="text-2xl font-black text-white uppercase italic mb-4 tracking-tighter">Offensive Security & Pentest</h3>
+                    <p class="text-sm text-slate-400 leading-relaxed mb-6 italic">
+                        En dehors de mes fonctions principales, je teste la résilience de mes propres infrastructures (ex: plateformes <span class="text-white font-bold">Moodle</span>). Je développe des <span class="text-white font-bold">scripts d'audit automatisés en Bash</span> (scan <span class="text-white font-bold">Nmap</span>, fingerprinting, fuzzing via <span class="text-white font-bold">FFUF</span>) routés à travers <span class="text-white font-bold">Proxychains et le réseau Tor</span> pour simuler des attaques externes furtives et éprouver mes règles de sécurité (WAF, Fail2ban).
+                    </p>
+                    <div class="flex flex-wrap gap-2 mono text-[9px] font-bold uppercase mt-auto">
+                        <span class="bg-red-500/10 text-red-400 px-2 py-1 rounded border border-red-500/20">Bash Scripting</span>
+                        <span class="bg-gray-500/10 text-gray-400 px-2 py-1 rounded border border-gray-500/20">Tor / Proxychains</span>
+                        <span class="bg-orange-500/10 text-orange-400 px-2 py-1 rounded border border-orange-500/20">FFUF & Nmap</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <section class="mt-20">
+            <div class="rounded-[3rem] p-12 glass border-emerald-500/20 flex flex-col md:flex-row justify-between gap-12 items-center italic">
+                <div class="space-y-12">
+                    <div class="border-l-4 border-emerald-500 pl-6">
+                        <h4 class="text-2xl font-black text-white uppercase italic tracking-tighter">Expert DevOps (Niv. 6)</h4>
+                        <p class="text-sm text-slate-400 uppercase font-black mb-4 italic tracking-tighter">Sorbonne Paris x DataScientest</p>
+                        <a href="./certifs/devops.pdf" target="_blank" class="inline-flex items-center gap-2 text-[10px] mono font-black text-emerald-400 border border-emerald-500/30 px-4 py-2 rounded-full hover:bg-emerald-500 hover:text-black transition-all">VOIR_LE_CERTIFICAT >></a>
+                    </div>
+                    
+                    <div class="border-l-4 border-blue-500 pl-6 font-black uppercase tracking-tighter italic underline decoration-white/5 uppercase">
+                        <h4 class="text-2xl font-black text-white italic uppercase tracking-tighter italic">Développeur Fullstack (RNCP)</h4>
+                        <p class="text-sm text-slate-400 mb-4 italic tracking-tighter">3W Academy</p>
+                        <a href="./certifs/fullstack.pdf" target="_blank" class="inline-flex items-center gap-2 text-[10px] mono font-black text-blue-400 border border-blue-500/30 px-4 py-2 rounded-full hover:bg-blue-500 hover:text-black transition-all">CONSULTER_LE_DIPLOME >></a>
+                    </div>
+                </div>
+                <div class="mt-12 md:mt-0">
+                    <a href="https://github.com/loic29290" target="_blank" class="px-14 py-6 bg-white text-black rounded-full text-xs font-black hover:bg-emerald-400 transition-all shadow-xl uppercase font-black italic">GitHub Access</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="py-12 border-t border-slate-900 text-center italic">
+        <p class="mono text-[10px] text-slate-600 font-bold uppercase italic">Loïc Prémel // DevOps Engineer // 2026 // Sorbonne Paris Certified</p>
+    </footer>
 
 </body>
 </html>
