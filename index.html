@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loïc | DevOps Engineer</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-slate-900 text-slate-200 font-mono">
+
+    <div class="max-w-4xl mx-auto px-6 py-12">
+        <header class="border-b border-slate-700 pb-8">
+            <h1 class="text-4xl font-bold text-emerald-400">Loïc</h1>
+            <p class="text-xl mt-2 text-slate-400">DevOps Engineer & Automation Specialist</p>
+            <div class="flex gap-4 mt-4">
+                <span class="bg-slate-800 text-emerald-400 px-3 py-1 rounded-full text-xs border border-emerald-400/30">Kubernetes</span>
+                <span class="bg-slate-800 text-emerald-400 px-3 py-1 rounded-full text-xs border border-emerald-400/30">Docker</span>
+                <span class="bg-slate-800 text-emerald-400 px-3 py-1 rounded-full text-xs border border-emerald-400/30">CI/CD</span>
+            </div>
+        </header>
+
+        <section class="mt-12">
+            <h2 class="text-2xl font-semibold mb-6 text-slate-100 italic">// Case Studies</h2>
+            
+            <div class="grid gap-8">
+                <div class="bg-slate-800/50 p-6 rounded-lg border border-slate-700">
+                    <h3 class="text-xl font-bold text-emerald-400 uppercase">Industrialisation Env. Local (Moodle)</h3>
+                    <p class="mt-2 text-slate-300">Standardisation d'une stack complexe via Docker pour les développeurs.</p>
+                    <ul class="mt-4 space-y-2 text-sm text-slate-400">
+                        <li>• Isolation via Docker-Compose (PHP-FPM, MariaDB, Redis)</li>
+                        <li>• Automatisation des tâches via Makefile</li>
+                        <li>• Gestion des secrets via variables d'environnement (.env)</li>
+                    </ul>
+                </div>
+
+                <div class="bg-slate-800/50 p-6 rounded-lg border border-slate-700">
+                    <h3 class="text-xl font-bold text-emerald-400 uppercase">GitOps & CI/CD Pipelines</h3>
+                    <p class="mt-2 text-slate-300">Automatisation des tests et déploiements via GitHub Actions.</p>
+                    <ul class="mt-4 space-y-2 text-sm text-slate-400">
+                        <li>• Linting automatique (Hadolint pour Docker, Helm-lint)</li>
+                        <li>• Build et Push d'images sur Registries</li>
+                        <li>• Déploiement automatisé sur environnements de test</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <footer class="mt-12 pt-8 border-t border-slate-700 text-center text-slate-500 text-sm">
+            <p>Deployé via GitHub Actions | Source Code on GitHub</p>
+        </footer>
+    </div>
+
+</body>
+</html>
